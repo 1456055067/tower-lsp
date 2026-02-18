@@ -28,22 +28,22 @@ bytes = "1.11"
 dashmap = "5.5"
 futures = { version = "0.3", default-features = false, features = ["std", "async-await"] }
 httparse = "1.10"
-lsp-types = "0.94.1"
+lsp-types = "0.97"
 memchr = "2.8"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tokio = { version = "1.38", optional = true }
 tokio-util = { version = "0.7", optional = true, features = ["codec"] }
 tower-lsp-macros = { version = "0.9", path = "./tower-lsp-macros" }
-tower = { version = "0.4", default-features = false, features = ["util"] }
+tower = { version = "0.5", default-features = false, features = ["util"] }
 tracing = "0.1"
 
 [dev-dependencies]
-async-tungstenite = { version = "0.22", features = ["tokio-runtime"] }
+async-tungstenite = { version = "0.29", features = ["tokio-runtime"] }
 tracing-subscriber = "0.3"
 tokio = { version = "1.38", features = ["io-util", "io-std", "macros", "rt-multi-thread"] }
 tokio-util = { version = "0.7", features = ["compat"] }
-ws_stream_tungstenite = { version = "0.10", features = ["tokio_io"] }
+ws_stream_tungstenite = { version = "0.15", features = ["tokio_io"] }
 
 [workspace]
 members = [".", "./tower-lsp-macros"]
